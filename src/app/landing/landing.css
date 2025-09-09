@@ -1,0 +1,75 @@
+.landing {
+  background-color: var(--black);
+  color: var(--bs-light);
+}
+
+.title {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 1)),
+    url("./../../assets/img/landing_bg1.gif");
+  background-position: center 70%;
+  background-size: cover;
+  background-attachment: scroll, fixed;
+  height: 100vh;
+}
+
+.feats {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(0, 0, 0, 0.4) 50%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("./../../assets/img/landing_bg2.gif");
+  background-position: center;
+  background-size: cover;
+  background-attachment: scroll, fixed;
+  min-height: 100vh;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+  font-size: x-large;
+}
+
+.login-btn {
+  border-radius: var(--border-rad);
+  background-color: var(--bs-dark);
+  width: 50%;
+  color: var(--bs-light);
+}
+
+.register-btn {
+  border-radius: var(--border-rad);
+  background-color: var(--bs-light);
+  width: 50%;
+  color: var(--bs-dark);
+}
+
+@media (max-width: 768px) {
+  .title {
+    background-color: var(--bs-secondary);
+  }
+  .subtitle {
+    margin-bottom: 1rem;
+    font-size: larger;
+  }
+  .feats {
+    background-position: 100% center;
+  }
+}
+
+.ci {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+
+.d-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
