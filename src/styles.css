@@ -15,7 +15,7 @@
   --bs-info: #5a7a88; /* muted teal/blue */
   --bs-light: #f4f4f4; /* soft light gray */
   --bs-dark: #222; /* near-black */
-  --border-rad: 0.5rem;
+  --border-rad: 0.3rem;
   --trans-speed: 0.5s;
 }
 
@@ -26,18 +26,12 @@
   font-family: var(--Montserrat);
 }
 
-body {
-  background-color: var(--black);
-  color: var(--bs-light);
-}
-
 button {
   transition: all 0.5s ease-in-out;
 }
 
 button:hover {
   transform: scale(1.05);
-  box-shadow: 0 0.1rem 1rem 0.2rem rgba(255, 255, 255, 0.2);
 }
 
 h1,
@@ -90,6 +84,22 @@ h6:hover,
   text-align: center;
 }
 
+.d-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+
+.d-column-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: end;
+  text-align: end;
+}
+
 .d-row-center {
   display: flex;
   flex-direction: row;
@@ -102,14 +112,6 @@ footer {
   background-color: var(--black);
   height: auto;
   color: var(--bs-light);
-}
-
-hr {
-  opacity: 0.4; /* makes it subtle */
-  margin: 2rem auto;
-  border: none;
-  border-top: 1px solid currentColor;
-  width: 60%;
 }
 
 .card {

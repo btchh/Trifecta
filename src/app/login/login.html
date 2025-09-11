@@ -1,10 +1,23 @@
-<div class="container-fluid vh-100 p-0">
+<div class="login container-fluid vh-100 p-0">
   <app-nav></app-nav>
-  <div class="container-fluid article">
-    <section>
-      <div class="sect-cont">
-        <h1>Hello!</h1>
+  <section class="d-column-end vh-100">
+    <form action="">
+      <div class="d-column-start">
+        <h1 class="display-1">Blank Journal</h1>
+        <p>Login</p>
       </div>
-    </section>
-  </div>
+      <div class="d-column-start mb-2">
+        <label for="username" id="username">Username</label>
+        <input type="text" class="inpt" placeholder="Username" />
+      </div>
+      <div class="d-column-start mb-2">
+        <label for="email" id="email">Email</label>
+        <input type="text" class="inpt" placeholder="Email" />
+      </div>
+      <div class="d-column-start mb-2">
+        <label for="password" id="password">Password</label>
+        <input type="password" class="inpt" placeholder="Password" />
+      </div>
+    </form>
+  </section>
 </div>

@@ -1,0 +1,52 @@
+.login {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url("./../../assets/img/login_bg.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+form {
+  border-radius: var(--border-rad);
+  background-color: var(--bs-light);
+  color: var(--bs-dark);
+  padding: 4rem 3rem;
+  width: 40%;
+  height: 100%;
+  align-content: center;
+}
+
+.inpt {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: var(--border-rad);
+  transition: all 0.5s ease-in-out;
+}
+
+.inpt:hover,
+.inpt:focus {
+  scale: 1.05;
+}
+
+@media (max-width: 768px) {
+  form {
+    width: 100%;
+    padding: 2rem 1rem 2rem 1rem;
+    align-content: end;
+    color: var(--bs-light);
+    background: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 1)
+    );
+  }
+
+  .login {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)),
+      url("./../../assets/img/login_bg.gif");
+    background-size: cover;
+    background-position: center;
+  }
+  .inpt {
+    padding: 0.2rem;
+  }
+}
