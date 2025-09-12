@@ -2,21 +2,26 @@
   <app-nav></app-nav>
   <section class="d-column-end vh-100">
     <form action="">
-      <div class="d-column-start">
-        <h1 class="display-1">Blank Journal</h1>
-        <p>Login</p>
-      </div>
-      <div class="d-column-start mb-2">
-        <label for="username" id="username">Username</label>
-        <input type="text" class="inpt" placeholder="Username" />
-      </div>
-      <div class="d-column-start mb-2">
-        <label for="email" id="email">Email</label>
-        <input type="text" class="inpt" placeholder="Email" />
-      </div>
-      <div class="d-column-start mb-2">
-        <label for="password" id="password">Password</label>
-        <input type="password" class="inpt" placeholder="Password" />
+      <div class="inpt-cont">
+        <div class="d-column-start">
+          <h1 class="display-1">Blank Journal</h1>
+          <p class="subtitle">Continue writing?</p>
+        </div>
+        <hr />
+        <div class="d-column-start mb-2">
+          <label for="username" id="username">Username</label>
+          <input type="text" class="inpt" placeholder="Username" />
+        </div>
+        <div class="d-column-start mb-4">
+          <label for="password" id="password">Password</label>
+          <input type="password" class="inpt" placeholder="Password" />
+        </div>
+        <div class="mb-4">
+          <button class="btn btn-dark" routerLink="/">Login</button>
+        </div>
+        <div class="text-center">
+          <p>Not a BRiter yet? <a href="/register">Register Now!</a></p>
+        </div>
       </div>
     </form>
   </section>

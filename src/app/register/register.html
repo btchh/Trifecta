@@ -1,14 +1,32 @@
-<div class="container-fluid vh-100 p-0">
+<div class="register container-fluid vh-100 p-0">
   <app-nav></app-nav>
-  <section>
-    <h1>
-      ChatGPT said: 👌 Got it — here are some aspect ratios you can use for your
-      carousel that balance desktop widescreen with mobile readability: 16:9 →
-      Standard widescreen (great for desktop, sometimes too short on tall
-      phones). 4:3 → More balanced, gives extra vertical space for captions on
-      mobile. 3:4 → Portrait-friendly, works well if images are taller (but
-      looks a bit boxed on desktop). 21:9 → Cinematic wide (super clean desktop,
-      but not good for mobile captions).
-    </h1>
+  <section class="d-column-end vh-100">
+    <form action="">
+      <div class="inpt-cont">
+        <div class="d-column-start">
+          <h1 class="display-1">Blank Journal</h1>
+          <p class="subtitle">Start writing?</p>
+        </div>
+        <hr />
+        <div class="d-column-start mb-2">
+          <label for="username" id="username">Username</label>
+          <input type="text" class="inpt" placeholder="Username" />
+        </div>
+        <div class="d-column-start mb-2">
+          <label for="email" id="email">Email</label>
+          <input type="email" class="inpt" placeholder="Email" />
+        </div>
+        <div class="d-column-start mb-4">
+          <label for="password" id="password">Password</label>
+          <input type="password" class="inpt" placeholder="Password" />
+        </div>
+        <div class="mb-4">
+          <button class="btn btn-dark" routerLink="/">Register</button>
+        </div>
+        <div class="text-center">
+          <p>Already a BRiter? <a href="/login">Login Now!</a></p>
+        </div>
+      </div>
+    </form>
   </section>
 </div>

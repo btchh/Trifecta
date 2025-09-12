@@ -26,14 +26,6 @@
   font-family: var(--Montserrat);
 }
 
-button {
-  transition: all 0.5s ease-in-out;
-}
-
-button:hover {
-  transform: scale(1.05);
-}
-
 h1,
 h2,
 h3,
@@ -62,8 +54,12 @@ h6:hover,
 .display-4:hover,
 .display-5:hover,
 .display-6:hover {
-  transform: scale(1.05);
-  text-shadow: 0 0.1rem 1rem rgba(255, 255, 255, 0.5);
+  transform: scale(1.01);
+  text-shadow: 0 0.1rem 1rem rgba(110, 110, 110, 0.5);
+}
+
+p > a {
+  text-decoration: none;
 }
 
 .hide-scrollbar {
